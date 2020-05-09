@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    line-height: 1.4;
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar {
+    font-size: 18px;
+    /* background-image: linear-gradient(290deg, #9306be8f 0%, #289be7   100%); */
+    background: #1A2980;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E55D87, #5FC3E4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(290deg, #E55D87, #5FC3E4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+}
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+.nav-links,
+.logo {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+.logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer; 
+    color: rgba(255,255,255,0.8);
+    font-size: 24px;
+}
+.active {
+    display: block;
+}
+
+.text-box {
+    margin: 1rem;
+    text-align: center;
+    font-size: calc(1vw + 1rem);
+    font-weight: 200;
+}
+
+
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card-pic {
+    width: 100%;
+
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .main-nav li {
+        margin: 0;
+    }
+    .nav-links {
+        margin-left: 40px;
+    }
+    .logo {
+        margin-top: 0;
+    }
+   .navbar-toggle {
+       display: none;
+    }
+    .logo:hover,
+    .nav-links:hover {
+        color: rgba(255, 255, 255, 1);
+    }
+}  
+
+@media (max-width: 450px) {
+    .image-cards {
+        flex: 100%;
+        margin: -3px;
+    }
+}
+@media (min-width: 451px) {
+    .image-cards {
+        flex: 50%;
+        margin: -4px;
+
+    }
+}
+@media (min-width: 700px) {
+    .image-cards {
+        flex: 33%;
+    }
+}
+@media (min-width: 1200px) {
+    .image-cards {
+        flex: 25%;
+    }
+}
+
+
+
+
+
+
+
+
